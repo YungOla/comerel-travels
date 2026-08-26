@@ -1,23 +1,10 @@
 [build]
   command = "npm run build"
-  functions = "netlify/functions"
   publish = ".next"
 
 [build.environment]
-  NEXT_PUBLIC_SITE_URL = "https://yourdomain.netlify.app"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  NODE_VERSION = "18"
 
 [dev]
   command = "npm run dev"
   port = 3000
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
-[context.production]
-  command = "npm run build"
-  publish = ".next"
