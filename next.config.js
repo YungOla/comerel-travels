@@ -5,10 +5,6 @@ const nextConfig = {
     domains: ['images.unsplash.com'],
     unoptimized: true,
   },
-  swcMinify: true,
-  compress: true,
-  poweredByHeader: false,
-  generateEtags: true,
 };
 
 module.exports = nextConfig;
