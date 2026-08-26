@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D7C7A1" />
+      <stop offset="50%" stop-color="#B8944E" />
+      <stop offset="100%" stop-color="#8C6D30" />
+    </linearGradient>
+    <linearGradient id="burgundy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8C3542" />
+      <stop offset="100%" stop-color="#6A2A34" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon Group -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Crescent (Globe representation) -->
+    <path d="M 50,0 A 50,50 0 1,0 100,50 L 85,50 A 35,35 0 1,1 50,15 Z" fill="url(#burgundy-grad)" />
+    
+    <!-- Dynamic flight arc -->
+    <path d="M 15,65 C 20,40 50,15 85,15 C 65,30 55,50 60,75 C 65,100 95,95 95,95 C 95,95 70,85 55,80 C 40,75 10,90 15,65 Z" fill="url(#gold-grad)" />
+    
+    <!-- Stylized plane / star element -->
+    <path d="M 85,15 L 98,8 L 92,20 L 105,25 L 90,28 L 88,40 L 82,25 Z" fill="#B8944E" />
+    
+    <!-- Inner Core -->
+    <circle cx="50" cy="50" r="15" fill="url(#burgundy-grad)" />
+    <circle cx="50" cy="50" r="8" fill="url(#gold-grad)" />
+  </g>
+
+  <!-- Text Group -->
+  <g transform="translate(130, 20)">
+    <!-- BRAND NAME -->
+    <text x="0" y="45" font-family="'Playfair Display', 'Georgia', serif" font-size="40" font-weight="900" fill="#6A2A34" letter-spacing="1.5">COMEREL</text>
+    <!-- SUBTITLE -->
+    <text x="3" y="78" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="20" font-weight="700" fill="#B8944E" letter-spacing="8">TRAVELS</text>
+  </g>
+</svg>
