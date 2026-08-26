@@ -3,6 +3,9 @@
   functions = "netlify/functions"
   publish = ".next"
 
+[build.environment]
+  NEXT_PUBLIC_SITE_URL = "https://yourdomain.netlify.app"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -14,3 +17,7 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[context.production]
+  command = "npm run build"
+  publish = ".next"
